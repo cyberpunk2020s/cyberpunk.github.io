@@ -16,6 +16,17 @@ This implements a form of single sign-on (SSO).<br></q>
 当然首先要创建ssh key<br>
 如果登录时ssh-agent并没有运行，使用命令
 </b><p>eval 'ssh-agent'</p>
+
+<h3 style="color:Blue;">adding your ssh key to the ssh-agent</h3>  
+<p style="background-color:LightGray;">
+  eval "$(ssh-agent -s)"<br>
+  >Agent pid 59566<br>
+  
+  <br>
+  ssh-add ~/.ssh/id_rsa<br>
+  <br>
+  </p>
+
 </body>
 
 </html>
